@@ -11,6 +11,8 @@ public class Chapter02 {
             } else {
                 answer+= Character.toLowerCase(x);
             }
+            // if(x>=97 && x<=122)
+            // if(x<=65 && x<=90)
         }
         return answer;
     }
