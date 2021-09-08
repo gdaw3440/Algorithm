@@ -1,8 +1,7 @@
 package Algorithm.String;
-
 import java.util.Scanner;
 
-public class Chapter07 { // Main
+public class Chapter08 { // Main
     public String solution(String str) {
         //String answer = "YES";
         //str = str.toUpperCase();
@@ -11,13 +10,14 @@ public class Chapter07 { // Main
         //  if(str.charAt(i)!=str.charAt(len-i-1)) return "NO";
         //}
         String answer = "NO";
+        str = str.toUpperCase().replaceAll("[^A-Z]", "");
         if (str.equalsIgnoreCase(new StringBuilder(str).reverse().toString())) answer = "YES";
         return answer;
     }
     public static void main(String[] args){
-        Chapter07 chapter07 = new Chapter07();
+        Chapter08 chapter08 = new Chapter08();
         Scanner scanner = new Scanner(System.in);
         String c  = scanner.next();
-        System.out.println(chapter07.solution(c));
+        System.out.println(chapter08.solution(c));
     }
 }
