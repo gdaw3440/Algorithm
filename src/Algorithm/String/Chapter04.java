@@ -12,8 +12,6 @@ public class Chapter04 { // Main
         return answer;
     }
 
-
-
     public static void main(String[] args){
         Chapter04 chapter04 = new Chapter04();
         Scanner scanner = new Scanner(System.in);
